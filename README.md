@@ -1,11 +1,44 @@
 # Overview
 
-It is public template of assignment `"labrabota 3"` for FPMI students
+Консольное приложение для лабораторной работы №2 (Task 1), вариант 10.
+
+Программа находит и подсчитывает количество шестизначных «счастливых» чисел.
+Счастливым считается число, у которого сумма первых трёх цифр равна сумме последних трёх.
+
+Диапазон поиска может задаваться через аргументы командной строки.
+
+# Author
+
+Састный-Легчин Владислав Сергеевич
+Группа 11, ФПМИ БГУ, 2 курс
 
 # Usage
 
-Please, edit README and add some details, as instance **{add your last name, first name and group number}**.
+Скомпилировать программу:
+
+```bash
+gcc -o labrabota2-1 src/main.c src/lucky.c -I src
+```
+
+Запуск без аргументов (диапазон по умолчанию 100000–999999):
+
+```bash
+./labrabota2-1
+```
+
+Запуск с указанием диапазона:
+
+```bash
+./labrabota2-1 100000 999999
+```
 
 # Building
 
-Please, import repository and use for repl.it project, which is defined in the assignment "labrabota 3".
+Проект собирается с помощью компилятора gcc в среде Replit.
+
+Исходные файлы:
+
+* src/main.c — клиент
+* src/lucky.c — реализация
+* src/lucky.h — интерфейс
+
